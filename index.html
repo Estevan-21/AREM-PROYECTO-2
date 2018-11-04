@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Currency Exchange</title>
+  </head>
+  <body>  
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Currency Exchange</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>        
+      </ul>      
+    </div>
+  </nav>
+  <!-- AOMUNT 1 -->
+  <div>
+    <label for="Text1" class="p-3 mb-2 bg-secondary text-white" style='position: absolute; top: 92px; left: 200px;  width: 805px'>Choose the corresponding concurrencies and amounts to see exhcange rates and conversion information.</label>
+    <form class="form-inline" style='position: absolute; top: 160px; left: 350px'>
+      <div class="input-group text-center md-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="amount2">Amount</span>
+        </div>
+        <input type="text" class="form-control" id="amount" placeholder="0" aria-describedby="inputGroupPrepend2" required>
+      </div>
+      <div class="form-group" style='position: absolute; top: 0px; left: 325px'>      
+      <select id="id" class="form-control">        
+        <option value="USD">United States Dolar</option>
+        <option value="COP">Colombian Peso</option>
+        <option value="RUB">Rusian Rublo</option>
+        <option value="EUR">Euro</option>
+        <option value="ARS">Argentine Peso</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="GBP">Pound Sterling</option>
+        <option value="CNY">Chinese Yuan</option>
+      </select>
+    </div>
+    </form>
+  </div>
+
+    <!--RESTULT-->
+    <div id="result"></div>
+
+
+  <!-- AOMUNT 2 -->
+  <div>
+    <form class="form-inline">      
+      <label for="exampleFormControlInput1" class="mr-5" style='position: absolute; top: 210px; left: 350px'>Currency to convert: </label>
+      <div class="form-group col-md-4" style='position: absolute; top: 210px; left: 660px'>      
+      <select id="id2" class="form-control">
+        <option value="USD">United States Dolar</option>
+        <option value="COP">Colombian Peso</option>
+        <option value="RUB">Rusian Rublo</option>
+        <option value="EUR">Euro</option>
+        <option value="ARS">Argentine Peso</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="GBP">Pound Sterling</option>
+        <option value="CNY">Chinese Yuan</option>
+      </select>
+    </div>
+    </form>
+  </div>
+  
+  <div id="table"></div>
+  </div>
+
+
+  <!--BUTTONS-->
+  <form style='position: absolute; top: 260px; left: 500px'>
+    <button type="button" class="btn btn-primary mr-4" onclick="ConvertControllerModule.convert()">Convert</button>
+    <button type="button" class="btn btn-success" onclick="ListControllerModule.getList()">Show Rate List</button>
+  </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/WeatherController.js"></script>
+    <script src="js/WeatherRestController.js"></script>
+  </body>
+</html>
