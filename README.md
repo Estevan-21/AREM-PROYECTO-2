@@ -16,6 +16,8 @@ De la API de Alpha Vantage se obtienen los datos en formato tipo JSON los cuales
 
 Desarrollado por:
 >Brayam Estevan Vargas Pinzón
->Arquitecturas Emresariales
+
+>Arquitecturas Empresariales
+
 >Escuela Colombiana de Ingeniería Julio Garavito
 
