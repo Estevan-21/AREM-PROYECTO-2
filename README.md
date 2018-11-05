@@ -3,7 +3,8 @@
 Link Portal en Aws: http://currency-exchange-estevan.s3-website-us-east-1.amazonaws.com/
 
 
-[Documento de Arquitectura](https://drive.google.com/open?id=1EMlpqwk1oYNFBPMGXKFsyN9gcwbn5E7B)
+[Documento de Arquitectura](https://drive.google.com/open?id=1EMlpqwk1oYNFBPMGXKFsyN9gcwbn5E7B) || 
+[Video demo del proyecto](https://drive.google.com/open?id=1we_HKQN_wNps0z29EzVKHLq2YAdBF86P)
 
 Este artículo tiene como fin presentar la arquitectura, implementación y pruebas pertenecientes a un   portal que expone servicios para el manejo rápido de las transacciones que efectúa la mesa de dinero, este portal permite realizar conversión de monedas con las tasas actuales y además muestra una lista de las tasas de cambio de todas las monedas con respecto al dólar.
 
